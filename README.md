@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Sure! Here's the adjusted README without real-time updates, authentication, and with a personalized dashboard for all three user roles:
 
-## Getting Started
+---
 
-First, run the development server:
+# Loan Management Application
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Overview
+
+The Loan Management Application is a web-based platform designed to streamline the process of managing loan applications. It provides a personalized dashboard for users, admins, and verifiers to interact with the application based on their roles. Users can submit loan requests, admins can approve or reject applications, and verifiers can verify or reject applications.
+
+## Features
+
+- **Online Application Submission**: Applicants can submit their loan applications through an intuitive and user-friendly interface.
+- **Role-Based Access Control**: The application supports three user roles: user, admin, and verifier. Each role has specific permissions and access levels:
+  - **User**: Can submit loan applications.
+  - **Admin**: Can approve or reject loan applications.
+  - **Verifier**: Can verify or reject loan applications.
+- **Personalized Dashboard**: Each user role has a personalized dashboard tailored to their specific responsibilities and tasks.
+
+## Tech Stack
+
+- **Frontend**: Built with Next.js, a React framework for server-side rendering and static site generation.
+- **Backend**: Next.js API routes for handling backend logic and communication with the database.
+- **Database**: MongoDB, a flexible and scalable NoSQL database for storing application data.
+- **UI Styling**: Tailwind CSS for styling the user interface components.
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone <repository-url>
+cd loan-management-application
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Set up environment variables:
 
-## Learn More
+```
+cp .env.example .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+Update the `.env` file with your MongoDB connection string.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+5. Access the application in your browser at `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **User**: Register an account and submit loan applications.
+- **Admin**: Access the admin panel to approve or reject loan applications.
+- **Verifier**: Verify or reject loan applications assigned to you.
