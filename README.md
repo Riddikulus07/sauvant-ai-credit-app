@@ -1,6 +1,4 @@
-Sure! Here's the adjusted README without real-time updates, authentication, and with a personalized dashboard for all three user roles:
 
----
 
 # Loan Management Application
 
